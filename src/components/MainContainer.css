@@ -1,0 +1,15 @@
+.main-container {
+  width: 1080px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px auto;
+}
+
+.step {
+  width: 50%;
+}
+
+.cart {
+  width: 40%;
+}

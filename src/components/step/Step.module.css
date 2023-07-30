@@ -1,0 +1,74 @@
+.form {
+  margin: 50px auto;
+}
+
+/*step one*/
+
+.formLine {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.inputLabel {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  color: #808080;
+  margin-bottom: 8px;
+}
+
+select,input {
+  padding: 8px;
+}
+
+.selectS {
+  width: 40%;
+  margin-right: 20px;
+}
+
+.selectL {
+  width: 60%;
+  margin-right: 20px;
+}
+
+.selectM {
+  width: 45%;
+  margin-right: 20px;
+}
+
+.selections {
+  width: 100%;
+}
+
+/*step two*/
+
+.radioGroup {
+  display: flex;
+  font-size: small;
+  border: 1px solid gray;
+  border-width: 1px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 12px 10px;
+}
+
+.groupText {
+  width: 100%;
+  padding-left: 10px;
+}
+
+.groupPrice {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/*step three*/
+
+.groupFirst {
+  margin-bottom: 20px;
+  width: 20rem;
+}
