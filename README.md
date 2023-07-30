@@ -32,5 +32,5 @@ npm run start
 5.出現以下內容表示伺服器已啟動
 
 ```
-Local:   http://localhost:5173/
+Local:   http://localhost:3000/
 ```
