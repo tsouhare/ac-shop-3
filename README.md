@@ -14,7 +14,7 @@ git clone https://github.com/tsouhare/ac-shop-3.git
 2.開啟 terminal
 
 ```
-cd ac-shop
+cd ac-shop-3
 ```
 
 3.安裝 npm 套件
