@@ -1,8 +1,6 @@
 import styles from './Cart.module.css'
 import MinusButton from '../../assets/icons/minus.svg'
 import PlusButton from '../../assets/icons/plus.svg'
-import {itemsData} from './itemsData.js'
-import {useState} from "react"
 
 
 function ProductsInfo({id, name, img, price, quantity, handleMinus, handlePlus }) {
@@ -24,8 +22,8 @@ function ProductsInfo({id, name, img, price, quantity, handleMinus, handlePlus }
   )
 }
 
-export default function CartItem() {
-  const [currentProduct, setCurrentProduct] = useState(itemsData);
+export default function CartItem({currentProduct, setCurrentProduct}) {
+  
   function handleClickPlus(id) {
     const newCurrentProduct = currentProduct.map((product) => {
       if (product.id === id) {
@@ -54,13 +52,6 @@ export default function CartItem() {
     setCurrentProduct(newCurrentProduct)
   }
 
-  function sumPrice () {
-    let totalPrice= 0
-    for( let i = 0; i < currentProduct.length; i++ ) {
-      totalPrice += currentProduct[i].price * currentProduct[i].quantity;
-    }
-    return (totalPrice)
-  }
   
   return(
   <>
@@ -71,16 +62,6 @@ export default function CartItem() {
       handlePlus={handleClickPlus}
       />
       )}
-    </section>
-    <hr></hr>
-    <section className={styles.cartInfo}>
-      <div className={styles.text}>運費</div>
-      <div className={styles.price}>免費</div>
-    </section>
-    <hr></hr>
-    <section className={styles.cartInfo}>
-      <div className={styles.text}>小計</div>
-      <div className={styles.price}>{sumPrice()}</div>
     </section>
   </>
   )
